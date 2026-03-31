@@ -58,7 +58,7 @@ namespace ExerciciosAula03;
             }
 
             // Mantém o console aberto até uma tecla ser pressionada
-            Console.WriteLine("\nPressione qualquer tecla para sair...");
+            Console.WriteLine("Pressione qualquer tecla para sair...\n");
             Console.ReadKey();
 
 
@@ -77,7 +77,7 @@ namespace ExerciciosAula03;
             //
             // 💡 Sintaxe do ternário: condição ? valor_se_true : valor_se_false
  
-            Console.WriteLine("\n📝 Exercício 2: Par ou Ímpar (Ternário)");
+            Console.WriteLine("📝 Exercício 2: Par ou Ímpar (Ternário)\n");
             Console.Write("Digite um número: ");
  
             // ESCREVA SEU CÓDIGO AQUI
@@ -95,7 +95,7 @@ namespace ExerciciosAula03;
             Console.WriteLine($"O número {numero2} é: {resultado}");
 
             // Pausa para leitura
-            Console.WriteLine("\nPressione qualquer tecla para continuar...");
+            Console.WriteLine("Pressione qualquer tecla para continuar...\n");
             Console.ReadKey();
 
 
@@ -119,7 +119,7 @@ namespace ExerciciosAula03;
             //
             // 💡 Cada case deve terminar com break
  
-            Console.WriteLine("\n📝 Exercício 3: Dias da semana (Switch)");
+            Console.WriteLine("📝 Exercício 3: Dias da semana (Switch)\n");
             Console.Write("Digite um número de 1 a 7: ");
  
             // ESCREVA SEU CÓDIGO AQUI
@@ -158,7 +158,7 @@ namespace ExerciciosAula03;
                     break;
             }
 
-            Console.WriteLine("\nPressione qualquer tecla para encerrar...");
+            Console.WriteLine("Pressione qualquer tecla para encerrar...\n");
             Console.ReadKey();
 
 
@@ -175,7 +175,7 @@ namespace ExerciciosAula03;
             //
             // 💡 Use == para comparar strings
  
-            Console.WriteLine("\n📝 Exercício 4: Sistema de Autenticação");
+            Console.WriteLine("📝 Exercício 4: Sistema de Autenticação\n");
             Console.Write("Username: ");
  
             // ESCREVA SEU CÓDIGO AQUI
@@ -187,7 +187,7 @@ namespace ExerciciosAula03;
             // 2. Solicitar ao usuário que digite username e password
             Console.WriteLine("=== SISTEMA DE LOGIN ===");
             
-            Console.Write("Usuário: ");
+            Console.Write("Utilizador: ");
             string userDigitado = Console.ReadLine();
 
             Console.Write("Senha: ");
@@ -199,18 +199,18 @@ namespace ExerciciosAula03;
             {
                 // 4. Exibir resultado positivo
                 Console.ForegroundColor = ConsoleColor.Green; // Bônus: muda a cor do texto para verde
-                Console.WriteLine("\nACESSO PERMITIDO! Bem-vindo ao sistema.");
+                Console.WriteLine("ACESSO PERMITIDO! Bem-vindo ao sistema.\n");
             }
             else
             {
                 // 4. Exibir resultado negativo
                 Console.ForegroundColor = ConsoleColor.Red; // Bônus: muda a cor do texto para vermelho
-                Console.WriteLine("\nACESSO NEGADO! Usuário ou senha incorretos.");
+                Console.WriteLine("ACESSO NEGADO! Utilizador ou senha incorretos.\n");
             }
 
             // Resetar a cor do console e finalizar
             Console.ResetColor();
-            Console.WriteLine("\nPressione qualquer tecla para sair...");
+            Console.WriteLine("Pressione qualquer tecla para sair...\n");
             Console.ReadKey();
 
  
@@ -219,7 +219,7 @@ namespace ExerciciosAula03;
             // ===================================================
             // RESUMO FINAL
             // ===================================================
-            Console.WriteLine("\n📌 Resumo das estruturas condicionais:");
+            Console.WriteLine("📌 Resumo das estruturas condicionais:\n");
             Console.WriteLine("if/else      → para decisões simples e complexas");
             Console.WriteLine("ternário ?:  → para atribuições simples");
             Console.WriteLine("switch/case  → para múltiplas opções de um valor");
@@ -238,7 +238,7 @@ namespace ExerciciosAula03;
             // O loop continua enquanto a condição for VERDADEIRA
             while (palpite != numeroSecreto)
             {
-                Console.Write("Digite seu palpite: ");
+                Console.Write("Digite o seu palpite: ");
                 palpite = Convert.ToInt32(Console.ReadLine());
 
                 if (palpite != numeroSecreto)
@@ -247,9 +247,50 @@ namespace ExerciciosAula03;
                 }
             }
 
-            Console.WriteLine("\n🎉 BOOOA! Você descobriu o número secreto!");
+            Console.WriteLine("🎉 BOOOA! Você descobriu o número secreto!\n");
+                       // Resetar a cor do console e finalizar
+            Console.ResetColor();
+            Console.WriteLine("Pressione qualquer tecla para sair...\n");
             Console.ReadKey();
             
+
+
+            // teste 2
+
+            int numeroSecreto2 = 7;
+            int palpite2 = 0;
+
+            Console.WriteLine("--- JOGO DA ADIVINHAÇÃO ---");
+            Console.WriteLine("Adivinhe o número entre 1 e 10!");
+
+            // Usamos do-while para repetir o bloco de código ATÉ o palpite ser igual ao número secreto
+            do
+            {
+                Console.Write("Digite o seu palpite: ");
+                string entrada2 = Console.ReadLine();
+
+                // 1. Validamos se o que foi digitado é um número
+                while (!int.TryParse(entrada2, out palpite2))
+                {
+                    Console.WriteLine("❌ Entrada inválida! Digite apenas números.");
+                    Console.Write("Tente novamente: ");
+                    entrada2 = Console.ReadLine();
+                }
+
+                // 2. Verificamos se ele acertou ou errou
+                if (palpite2 != numeroSecreto2)
+                {
+                    Console.WriteLine("❌ Errou... tente de novo!");
+                }
+
+            } while (palpite2 != numeroSecreto2); // O loop volta para o início se o palpite for diferente
+
+            Console.WriteLine("🎉 BOOOA! Você descobriu o número secreto!\n");
+                       // Resetar a cor do console e finalizar
+            Console.ResetColor();
+            Console.WriteLine("Pressione qualquer tecla para sair...\n");
+            Console.ReadKey();
+           
         } // fim executar
    
    
