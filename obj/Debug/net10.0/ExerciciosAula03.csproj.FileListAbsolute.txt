@@ -1,0 +1,15 @@
+C:\_Dev\UC00245\ExerciciosAula03\obj\Debug\net10.0\ExerciciosAula03.GeneratedMSBuildEditorConfig.editorconfig
+C:\_Dev\UC00245\ExerciciosAula03\obj\Debug\net10.0\ExerciciosAula03.AssemblyInfoInputs.cache
+C:\_Dev\UC00245\ExerciciosAula03\obj\Debug\net10.0\ExerciciosAula03.AssemblyInfo.cs
+C:\_Dev\UC00245\ExerciciosAula03\obj\Debug\net10.0\ExerciciosAula03.csproj.CoreCompileInputs.cache
+C:\_Dev\UC00245\ExerciciosAula03\obj\Debug\net10.0\ExerciciosAula03.sourcelink.json
+C:\_Dev\UC00245\ExerciciosAula03\bin\Debug\net10.0\ExerciciosAula03.exe
+C:\_Dev\UC00245\ExerciciosAula03\bin\Debug\net10.0\ExerciciosAula03.deps.json
+C:\_Dev\UC00245\ExerciciosAula03\bin\Debug\net10.0\ExerciciosAula03.runtimeconfig.json
+C:\_Dev\UC00245\ExerciciosAula03\bin\Debug\net10.0\ExerciciosAula03.dll
+C:\_Dev\UC00245\ExerciciosAula03\bin\Debug\net10.0\ExerciciosAula03.pdb
+C:\_Dev\UC00245\ExerciciosAula03\obj\Debug\net10.0\ExerciciosAula03.dll
+C:\_Dev\UC00245\ExerciciosAula03\obj\Debug\net10.0\refint\ExerciciosAula03.dll
+C:\_Dev\UC00245\ExerciciosAula03\obj\Debug\net10.0\ExerciciosAula03.pdb
+C:\_Dev\UC00245\ExerciciosAula03\obj\Debug\net10.0\ExerciciosAula03.genruntimeconfig.cache
+C:\_Dev\UC00245\ExerciciosAula03\obj\Debug\net10.0\ref\ExerciciosAula03.dll
